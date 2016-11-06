@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///D:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="ProjectPath = ..\Civilization Story ModelingLib\Civilization Story ModelingLib.csproj" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="TemplateFilePath = D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Medium" Text="Civilization Story Modeling's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Civilization Story Modeling::Human' -  (Class), 'Civilization Story Modeling::Ministry' -  (Class), 'Civilization Story Modeling::Faction' -  (Class), 'Civilization Story Modeling::Sector' -  (Class), 'Civilization Story Modeling::SectorBranch' -  (Class), 'Civilization Story Modeling::Government' -  (Class), 'Civilization Story Modeling::World' -  (Class), 'Civilization Story Modeling::FinancialMinstry' -  (Class), 'Civilization Story Modeling::TaxSector' -  (Class), 'Civilization Story Modeling::CustomsSector' -  (Class), 'Civilization Story Modeling::PublicTreasurySector' -  (Class), 'Civilization Story Modeling::CoinageSector' -  (Class), 'Civilization Story Modeling::MinisterOfficeSector' -  (Class), 'Civilization Story Modeling::PublicBudgetSector' -  (Class) " />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Medium" Text="'Civilization Story Modeling::Human' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\Human.cs" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Medium" Text="'Civilization Story Modeling::Ministry' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\Ministry.cs" />
+  <Message Timestamp="2016-11-06T17:49:34" Importance="Medium" Text="'Civilization Story Modeling::Faction' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\Faction.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::Sector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\Sector.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::SectorBranch' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\SectorBranch.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::Government' -  (Class) : success (file created) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\Government.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::World' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\World.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::FinancialMinstry' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\FinancialMinstry.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::TaxSector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\TaxSector.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::CustomsSector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\CustomsSector.cs" />
+  <Message Timestamp="2016-11-06T17:49:35" Importance="Medium" Text="'Civilization Story Modeling::PublicTreasurySector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\PublicTreasurySector.cs" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Medium" Text="'Civilization Story Modeling::CoinageSector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\CoinageSector.cs" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Medium" Text="'Civilization Story Modeling::MinisterOfficeSector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\MinisterOfficeSector.cs" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Medium" Text="'Civilization Story Modeling::PublicBudgetSector' -  (Class) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\PublicBudgetSector.cs" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="ProjectPath = ..\Civilization Story ModelingLib\Civilization Story ModelingLib.csproj" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="TemplateFilePath = D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Medium" Text="Civilization Story Modeling's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'Civilization Story Modeling::HumanSex' -  (Enumeration) " />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Medium" Text="'Civilization Story Modeling::HumanSex' -  (Enumeration) : success (file replaced) - E:\My Data\CivilizationStory\Civilization Story ModelingLib\GeneratedCode\HumanSex.cs" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="ProjectPath = ..\Civilization Story ModelingLib\Civilization Story ModelingLib.csproj" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="TemplateFilePath = D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="ResolvedTemplateFilePath = D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Medium" Text="Civilization Story Modeling's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Civilization Story Modeling::Human' -  (Class), 'Civilization Story Modeling::Ministry' -  (Class), 'Civilization Story Modeling::Faction' -  (Class), 'Civilization Story Modeling::Sector' -  (Class), 'Civilization Story Modeling::SectorBranch' -  (Class), 'Civilization Story Modeling::Government' -  (Class), 'Civilization Story Modeling::World' -  (Class), 'Civilization Story Modeling::FinancialMinstry' -  (Class), 'Civilization Story Modeling::TaxSector' -  (Class), 'Civilization Story Modeling::CustomsSector' -  (Class), 'Civilization Story Modeling::PublicTreasurySector' -  (Class), 'Civilization Story Modeling::CoinageSector' -  (Class), 'Civilization Story Modeling::MinisterOfficeSector' -  (Class), 'Civilization Story Modeling::PublicBudgetSector' -  (Class) " />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::Human' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::Ministry' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::Faction' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::Sector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::SectorBranch' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::Government' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::World' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::FinancialMinstry' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::TaxSector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::CustomsSector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::PublicTreasurySector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:36" Importance="Diagnostic" Text="'Civilization Story Modeling::CoinageSector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:37" Importance="Diagnostic" Text="'Civilization Story Modeling::MinisterOfficeSector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:37" Importance="Diagnostic" Text="'Civilization Story Modeling::PublicBudgetSector' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="The selection included 18 elements which were not bound to a template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'double' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'DateTime' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="Diagnostic" Text="'Civilization Story Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-11-06T17:49:38" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
