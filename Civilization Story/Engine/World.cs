@@ -17,5 +17,11 @@ namespace Civilization_Story.Engine
             factions.Add(f);
             return f;
         }
+
+        public void update(double elapsedSeconds)
+        {
+            foreach (var faction in factions)
+                faction.update(elapsedSeconds);
+        }
     }
 }

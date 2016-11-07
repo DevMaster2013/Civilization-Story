@@ -8,11 +8,12 @@ namespace Civilization_Story.Engine
 {
     public class Family
     {
-        public Human husband = null;
-        public Human wife = null;
+        public HumanMale husband = null;
+        public HumanFemale wife = null;
         public List<Human> childs = new List<Human>();
+        public DateTime startDate;
 
-        public Family(Human h, Human w)
+        public Family(HumanMale h, HumanFemale w)
         {
             husband = h;
             wife = w;
@@ -21,12 +22,30 @@ namespace Civilization_Story.Engine
             wife.family = this;
 
             childs = new List<Human>();
+            startDate = GameClock.currentTime;
         }
 
         public void addChild(Human ch)
         {
             ch.family = this;
             childs.Add(ch);
+        }
+
+        public void update(double elapsedSeconds)
+        {
+
+        }
+
+        private void updateWifeState()
+        {
+            if (wife.isPregnant)
+            {
+
+            }
+            else
+            {
+
+            }
         }
     }
 }

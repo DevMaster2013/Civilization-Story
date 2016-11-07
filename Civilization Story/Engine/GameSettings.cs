@@ -10,5 +10,6 @@ namespace Civilization_Story.Engine
     {
         public static double gameSpeedFactor = 1.0;
         public static DateTime gameStartDate = new DateTime(21, 1, 1, 0, 0, 0);
+        public static TimeSpan minAllowedTimeBetweenEachPregnant = TimeSpan.FromDays(370.0);
     }
 }

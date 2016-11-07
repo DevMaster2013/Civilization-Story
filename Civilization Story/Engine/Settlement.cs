@@ -17,5 +17,10 @@ namespace Civilization_Story.Engine
             name = n;
             faction = f;
         }
+
+        public void update(double elapsedSeconds)
+        {
+
+        }
     }
 }

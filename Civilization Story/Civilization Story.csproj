@@ -52,7 +52,10 @@
     <Compile Include="Engine\GameClock.cs" />
     <Compile Include="Engine\GameSettings.cs" />
     <Compile Include="Engine\Human.cs" />
+    <Compile Include="Engine\HumanFemale.cs" />
+    <Compile Include="Engine\HumanMale.cs" />
     <Compile Include="Engine\Player.cs" />
+    <Compile Include="Engine\RandomGenerator.cs" />
     <Compile Include="Engine\Settlement.cs" />
     <Compile Include="Engine\World.cs" />
     <Compile Include="Forms\frmCreateGame.cs">

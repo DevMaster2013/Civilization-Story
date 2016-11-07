@@ -25,12 +25,15 @@ namespace Civilization_Story.Engine
 
         public Human createHuman(string n, DateTime dop, bool m)
         {
-            Human h = new Human(n, m, dop, null);
+            Human h;
+            if (m) h = new HumanMale(n, dop, null);
+            else h = new HumanFemale(n, dop, null);
+
             humans.Add(h);
             return h;
         }
 
-        public Family createFamily(Human hus, Human wife)
+        public Family createFamily(HumanMale hus, HumanFemale wife)
         {
             Family f = new Family(hus, wife);
             families.Add(f);
@@ -42,6 +45,16 @@ namespace Civilization_Story.Engine
             Settlement s = new Settlement(n, this);
             settlements.Add(s);
             return s;
+        }
+
+        public void update(double elapsedSeconds)
+        {
+            foreach (var family in families)
+                family.update(elapsedSeconds);
+            foreach (var human in humans)
+                human.update(elapsedSeconds);
+            foreach (var settlement in settlements)
+                settlement.update(elapsedSeconds);
         }
     }
 }

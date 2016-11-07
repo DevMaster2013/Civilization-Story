@@ -28,15 +28,17 @@ namespace Civilization_Story.Engine
 
             DateTime dob = GameClock.currentTime.AddYears(-20);
 
-            Human founder = f.createHuman(playerName, dob, true);
-            Human founderWife = f.createHuman(wifeName, dob, false);
+            HumanMale founder = f.createHuman(playerName, dob, true) as HumanMale;
+            HumanFemale founderWife = f.createHuman(wifeName, dob, false) as HumanFemale;
             f.createFamily(founder, founderWife);
             f.founder = founder;
         }
 
         public void update(double elapsedSeconds)
         {
-            GameClock.currentTime += TimeSpan.FromSeconds(elapsedSeconds * GameSettings.gameSpeedFactor);
+            GameClock.update(elapsedSeconds);
+            world.update(elapsedSeconds);
+            player.update(elapsedSeconds);
         }
     }
 }
