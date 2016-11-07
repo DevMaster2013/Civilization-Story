@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Engine\Faction.cs" />
+    <Compile Include="Engine\Family.cs" />
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Engine\GameClock.cs" />
+    <Compile Include="Engine\GameSettings.cs" />
+    <Compile Include="Engine\Human.cs" />
+    <Compile Include="Engine\Player.cs" />
+    <Compile Include="Engine\Settlement.cs" />
+    <Compile Include="Engine\World.cs" />
+    <Compile Include="Forms\frmCreateGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\frmCreateGame.Designer.cs">
+      <DependentUpon>frmCreateGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainGame.Designer.cs">
+      <DependentUpon>frmMainGame.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmCreateGame.resx">
+      <DependentUpon>frmCreateGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainGame.resx">
+      <DependentUpon>frmMainGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
