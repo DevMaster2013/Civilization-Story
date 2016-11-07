@@ -48,5 +48,13 @@ namespace Civilization_Story
             lnkPopulation.Text = game.player.faction.humans.Count.ToString() + " Civil";
             lnkSettlementsCount.Text = game.player.faction.settlements.Count.ToString() + " Settlement";
         }
+
+        private void lnkPopulation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmFactionPopulations frm = new frmFactionPopulations();
+            frm.faction = game.player.faction;
+            frm.game = game;
+            frm.Show();
+        }
     }
 }

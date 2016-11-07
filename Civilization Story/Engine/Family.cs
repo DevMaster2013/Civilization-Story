@@ -33,19 +33,25 @@ namespace Civilization_Story.Engine
 
         public void update(double elapsedSeconds)
         {
-
+            updateWifeState();
         }
 
         private void updateWifeState()
         {
-            if (wife.isPregnant)
-            {
+            if (wife.checkIsCanHasChilds())
+                tryToInitPregnant();
+        }
 
-            }
-            else
-            {
+        private void tryToInitPregnant()
+        {
+            bool createPregnant = RandomGenerator.getRandomNumber(0.0, 1.0) < getPregnantPropability();
+            if (createPregnant)
+                wife.createPregnant();
+        }
 
-            }
+        private double getPregnantPropability()
+        {
+            return 0.7;
         }
     }
 }

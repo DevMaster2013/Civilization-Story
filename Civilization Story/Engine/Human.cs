@@ -15,6 +15,7 @@ namespace Civilization_Story.Engine
         public Family family = null;
         public bool isAlive = true;
         public bool canHasChilds = true;
+        public Faction faction = null;
 
         public Human(string n, bool m, DateTime dob, Family f)
         {

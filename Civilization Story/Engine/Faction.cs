@@ -28,6 +28,7 @@ namespace Civilization_Story.Engine
             Human h;
             if (m) h = new HumanMale(n, dop, null);
             else h = new HumanFemale(n, dop, null);
+            h.faction = this;
 
             humans.Add(h);
             return h;
@@ -49,11 +50,11 @@ namespace Civilization_Story.Engine
 
         public void update(double elapsedSeconds)
         {
-            foreach (var family in families)
+            foreach (var family in families.ToArray())
                 family.update(elapsedSeconds);
-            foreach (var human in humans)
+            foreach (var human in humans.ToArray())
                 human.update(elapsedSeconds);
-            foreach (var settlement in settlements)
+            foreach (var settlement in settlements.ToArray())
                 settlement.update(elapsedSeconds);
         }
     }

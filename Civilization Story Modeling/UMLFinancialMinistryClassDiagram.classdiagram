@@ -1,5 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="811d1c47-1152-403e-b4be-9924ae61e3d5" name="UMLFinancialMinistryClassDiagram" linkedPackageId="9f68c5f8-f3a6-440c-a859-917bcf6b0021" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="811d1c47-1152-403e-b4be-9924ae61e3d5" name="UMLFinancialMinistryClassDiagram" linkedPackageId="9f68c5f8-f3a6-440c-a859-917bcf6b0021" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d2cbfd0b-6709-4b01-9e50-84a430df8e00">
+      <elementDefinition Id="7caee12d-afa4-4237-86d9-f528cd4ace86" />
+      <body>MinisterOfficeSector :
+	Manage Employment of Ministry
+	Provide General Information about the Ministry
+	Manage the Budget of the Sectors
+PublicTreasurySector :
+	Manage the Payments and Income for the Faction
+	Pay Wages for Employees
+	Collect Money from other departments of the couuntry
+CustomsSector :
+	Manage the entry of goods and exit of goods for the country
+TaxSector :
+	Manage different taxes for the Faction
+CoinageSector :
+	Manage producing coins for the country usage
+PublicBudgetSector :
+	Distribute budget within other departments
+</body>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="71485b0c-3668-4800-873b-268046130bd7" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="0d039337-b1ef-40ad-95ff-fbf2b56becdd" />
@@ -72,32 +94,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="6d41d098-03fe-4f05-84bf-cbb3cfd76cac">
-      <profileInstance Id="59574245-b2aa-4edc-b70a-57a0bbc57811" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8aa96e68-c7b1-4544-964c-a016849e2bf2">
-      <profileInstance Id="f9b9e24f-3ea6-4cce-91c2-f0ce453639c6" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="937b525a-087b-482a-a4d4-cba705ce03fa">
-      <profileInstance Id="4e3fe564-3aa1-469f-8304-98d60fad9cc1" name="CSharpProfile">
-        <elementDefinition Id="9ee9677f-001d-4b42-b264-075f16211f7d" />
-      </profileInstance>
-      <elementDefinition Id="155ed812-a13f-42bd-95df-81d58dd75dbb" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="55203083-6caa-4971-961f-018182dde01b">
-      <profileInstance Id="b3c78f4e-95f5-4383-8726-74e6364b998e" name="TextTemplateBindings">
-        <elementDefinition Id="562a293f-8d7f-4580-9a0a-f678bf68a988" />
-      </profileInstance>
-      <elementDefinition Id="00e5fd40-5861-4a97-9ff7-5a2ba6861d19" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="afa9ccbc-29ac-4c81-bdf7-f755a72e3e4a" name="Ministry" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -767,5 +763,31 @@
   </packagedElements>
   <package Id="9f68c5f8-f3a6-440c-a859-917bcf6b0021" name="Civilization Story Modeling">
     <elementDefinition Id="0e4689bc-7ef8-4865-bd92-8cdb0908d1f6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6d41d098-03fe-4f05-84bf-cbb3cfd76cac">
+        <profileInstance Id="59574245-b2aa-4edc-b70a-57a0bbc57811" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8aa96e68-c7b1-4544-964c-a016849e2bf2">
+        <profileInstance Id="f9b9e24f-3ea6-4cce-91c2-f0ce453639c6" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="937b525a-087b-482a-a4d4-cba705ce03fa">
+        <profileInstance Id="4e3fe564-3aa1-469f-8304-98d60fad9cc1" name="CSharpProfile">
+          <elementDefinition Id="9ee9677f-001d-4b42-b264-075f16211f7d" />
+        </profileInstance>
+        <elementDefinition Id="155ed812-a13f-42bd-95df-81d58dd75dbb" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="55203083-6caa-4971-961f-018182dde01b">
+        <profileInstance Id="b3c78f4e-95f5-4383-8726-74e6364b998e" name="TextTemplateBindings">
+          <elementDefinition Id="562a293f-8d7f-4580-9a0a-f678bf68a988" />
+        </profileInstance>
+        <elementDefinition Id="00e5fd40-5861-4a97-9ff7-5a2ba6861d19" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

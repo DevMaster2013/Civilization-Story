@@ -14,6 +14,7 @@ namespace Civilization_Story.Engine
         public Game()
         {
             GameClock.currentTime = GameSettings.gameStartDate;
+            NameDatabase.createNameDatabase();
         }
 
         public void createWorld()

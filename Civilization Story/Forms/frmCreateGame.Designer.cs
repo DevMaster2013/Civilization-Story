@@ -33,9 +33,9 @@
             this.txtPlayerName = new System.Windows.Forms.TextBox();
             this.txtFactionName = new System.Windows.Forms.TextBox();
             this.grbPlayerSettings = new System.Windows.Forms.GroupBox();
-            this.btnCreateGame = new System.Windows.Forms.Button();
-            this.txtWifeName = new System.Windows.Forms.TextBox();
             this.lblWifeName = new System.Windows.Forms.Label();
+            this.txtWifeName = new System.Windows.Forms.TextBox();
+            this.btnCreateGame = new System.Windows.Forms.Button();
             this.grbPlayerSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,23 @@
             this.grbPlayerSettings.TabStop = false;
             this.grbPlayerSettings.Text = "Player Settings :";
             // 
+            // lblWifeName
+            // 
+            this.lblWifeName.AutoSize = true;
+            this.lblWifeName.Location = new System.Drawing.Point(7, 47);
+            this.lblWifeName.Name = "lblWifeName";
+            this.lblWifeName.Size = new System.Drawing.Size(66, 13);
+            this.lblWifeName.TabIndex = 0;
+            this.lblWifeName.Text = "Wife Name :";
+            // 
+            // txtWifeName
+            // 
+            this.txtWifeName.Location = new System.Drawing.Point(122, 44);
+            this.txtWifeName.Name = "txtWifeName";
+            this.txtWifeName.Size = new System.Drawing.Size(188, 21);
+            this.txtWifeName.TabIndex = 3;
+            this.txtWifeName.Text = "Player Wife";
+            // 
             // btnCreateGame
             // 
             this.btnCreateGame.Location = new System.Drawing.Point(102, 116);
@@ -98,23 +115,6 @@
             this.btnCreateGame.UseVisualStyleBackColor = true;
             this.btnCreateGame.Click += new System.EventHandler(this.btnCreateGame_Click);
             // 
-            // txtWifeName
-            // 
-            this.txtWifeName.Location = new System.Drawing.Point(122, 44);
-            this.txtWifeName.Name = "txtWifeName";
-            this.txtWifeName.Size = new System.Drawing.Size(188, 21);
-            this.txtWifeName.TabIndex = 3;
-            this.txtWifeName.Text = "Player Wife";
-            // 
-            // lblWifeName
-            // 
-            this.lblWifeName.AutoSize = true;
-            this.lblWifeName.Location = new System.Drawing.Point(7, 47);
-            this.lblWifeName.Name = "lblWifeName";
-            this.lblWifeName.Size = new System.Drawing.Size(66, 13);
-            this.lblWifeName.TabIndex = 0;
-            this.lblWifeName.Text = "Wife Name :";
-            // 
             // frmCreateGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,6 +123,7 @@
             this.Controls.Add(this.btnCreateGame);
             this.Controls.Add(this.grbPlayerSettings);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCreateGame";
             this.Text = "Civilization Story - Create Game";
             this.grbPlayerSettings.ResumeLayout(false);

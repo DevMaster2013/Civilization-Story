@@ -54,7 +54,9 @@
     <Compile Include="Engine\Human.cs" />
     <Compile Include="Engine\HumanFemale.cs" />
     <Compile Include="Engine\HumanMale.cs" />
+    <Compile Include="Engine\NameDatabase.cs" />
     <Compile Include="Engine\Player.cs" />
+    <Compile Include="Engine\Pregnant.cs" />
     <Compile Include="Engine\RandomGenerator.cs" />
     <Compile Include="Engine\Settlement.cs" />
     <Compile Include="Engine\World.cs" />
@@ -63,6 +65,12 @@
     </Compile>
     <Compile Include="Forms\frmCreateGame.Designer.cs">
       <DependentUpon>frmCreateGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFactionPopulations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFactionPopulations.Designer.cs">
+      <DependentUpon>frmFactionPopulations.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainGame.cs">
       <SubType>Form</SubType>
@@ -74,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmCreateGame.resx">
       <DependentUpon>frmCreateGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFactionPopulations.resx">
+      <DependentUpon>frmFactionPopulations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainGame.resx">
       <DependentUpon>frmMainGame.cs</DependentUpon>

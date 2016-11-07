@@ -8,29 +8,46 @@ namespace Civilization_Story.Engine
 {
     public class HumanFemale : Human
     {
-        public bool isPregnant;
-        public DateTime? lastDatePregnenat = null;
+        public Pregnant currentPregnant = null;
 
         public HumanFemale(string n, DateTime dop, Family f)
             : base(n, false, dop, f)
         {
-            isPregnant = false;
         }
 
         public override void update(double elapsedSeconds)
         {
+            if (currentPregnant != null && !currentPregnant.isDone)
+                currentPregnant.update(elapsedSeconds);
+        }
 
+        public void createPregnant()
+        {
+            currentPregnant = new Pregnant(this);
+            currentPregnant.onPregnantComplete += CurrentPregnant_onPregnantComplete;
+        }
+
+        private void CurrentPregnant_onPregnantComplete(Pregnant pregnant, bool succeeded)
+        {
+            if (succeeded)
+            {
+                Human h = faction.createHuman(RandomGenerator.getRandomName(pregnant.isMale), pregnant.endDate, pregnant.isMale);
+                family.childs.Add(h);
+            }
         }
 
         public override bool checkIsCanHasChilds()
         {
-            if (isPregnant)
+            if (!base.checkIsCanHasChilds())
                 return false;
 
-            if (lastDatePregnenat == null)
+            if (currentPregnant == null)
                 return true;
 
-            TimeSpan elapsedFromLastPregnant = GameClock.currentTime - lastDatePregnenat.Value;
+            if (currentPregnant != null && !currentPregnant.isDone)
+                return false;
+
+            TimeSpan elapsedFromLastPregnant = GameClock.currentTime - currentPregnant.endDate;
             if (elapsedFromLastPregnant < GameSettings.minAllowedTimeBetweenEachPregnant)
                 return false;
 
