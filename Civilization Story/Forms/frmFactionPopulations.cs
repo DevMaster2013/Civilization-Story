@@ -1,4 +1,6 @@
-﻿using Civilization_Story.Engine;
+﻿using Engine.Core;
+using Engine.Modules.Humans;
+using Engine.Modules.Regional;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,12 +35,43 @@ namespace Civilization_Story.Forms
 
         private void updateForm()
         {
+            lnkFamiliesCount.Text = faction.families.Count.ToString() + " Family";
+            int rowIndex = -1;
+            int colIndex = -1;
+            if (gridPopulations.CurrentCell != null)
+            {
+                rowIndex = gridPopulations.CurrentCell.RowIndex;
+                colIndex = gridPopulations.CurrentCell.ColumnIndex;
+            }
+
             gridPopulations.Rows.Clear();
             lnkFactionName.Text = faction.name;
-            foreach (Human h in faction.humans.ToArray())
+
+            List<Human> liveHumans = faction.humanManagement.getLiveHumans();
+            if (liveHumans.Count >= 0)
             {
-                int years = (int)Math.Round((GameClock.currentTime - h.dateOfBirth).TotalDays / 356.0);               
-                gridPopulations.Rows.Add(h.name, h.dateOfBirth.ToShortDateString(), years.ToString(), h.isMale ? "Male" : "Female", h.canHasChilds);                
+                foreach (Human h in liveHumans)
+                {
+                    int years = (int)Math.Round(h.age.TotalDays / 356.0);
+                    int maxAge = (int)Math.Round(h.maxAge.TotalDays / 356.0);
+                    DataGridViewRow row = (DataGridViewRow)gridPopulations.Rows[0].Clone();
+                    row.SetValues(h.name, h.dateOfBirth.ToShortDateString(), years.ToString(), maxAge, h.isMale ? "Male" : "Female", h.canHasChilds);
+                    row.Tag = h;
+                    gridPopulations.Rows.Add(row);
+                }
+                if (rowIndex != -1 && colIndex != -1)
+                    gridPopulations.CurrentCell = gridPopulations.Rows[rowIndex].Cells[colIndex];
+            }
+        }
+
+        private void gridPopulations_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                Human h = gridPopulations.Rows[e.RowIndex].Tag as Human;
+                frmHumanInfo frm = new frmHumanInfo();
+                frm.human = h;
+                frm.Show();
             }
         }
     }

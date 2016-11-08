@@ -46,20 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Engine\Faction.cs" />
-    <Compile Include="Engine\Family.cs" />
-    <Compile Include="Engine\Game.cs" />
-    <Compile Include="Engine\GameClock.cs" />
-    <Compile Include="Engine\GameSettings.cs" />
-    <Compile Include="Engine\Human.cs" />
-    <Compile Include="Engine\HumanFemale.cs" />
-    <Compile Include="Engine\HumanMale.cs" />
-    <Compile Include="Engine\NameDatabase.cs" />
-    <Compile Include="Engine\Player.cs" />
-    <Compile Include="Engine\Pregnant.cs" />
-    <Compile Include="Engine\RandomGenerator.cs" />
-    <Compile Include="Engine\Settlement.cs" />
-    <Compile Include="Engine\World.cs" />
     <Compile Include="Forms\frmCreateGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +57,12 @@
     </Compile>
     <Compile Include="Forms\frmFactionPopulations.Designer.cs">
       <DependentUpon>frmFactionPopulations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHumanInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHumanInfo.Designer.cs">
+      <DependentUpon>frmHumanInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainGame.cs">
       <SubType>Form</SubType>
@@ -85,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmFactionPopulations.resx">
       <DependentUpon>frmFactionPopulations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHumanInfo.resx">
+      <DependentUpon>frmHumanInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainGame.resx">
       <DependentUpon>frmMainGame.cs</DependentUpon>
@@ -110,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{67460289-2310-4566-b325-c88b3c6446f4}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
